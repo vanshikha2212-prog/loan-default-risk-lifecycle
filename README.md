@@ -1,67 +1,97 @@
-**Loan Default Risk Prediction
-Understanding the Question → Data → Insight Lifecycle**
-**Question**
+# Environment Setup
 
-Every data science project should begin with a clear question. The question defines the problem we are trying to solve and ensures that the analysis has a meaningful objective.
+## Operating System
 
-For this project, the question is:
+- macOS (Apple Silicon)
 
-**"Which loan applicants are at the highest risk of defaulting on their loans?"**
-Starting with a clear question helps determine what data is needed and prevents wasting time analyzing information that is not relevant.
+## Python Version
 
-**Data**
+```text
+Python 3.13.9
+```
 
-Once the question is defined, the next step is to gather and understand the data.
+## Anaconda Version
 
-For this project, the required data could include:
+```text
+conda 25.11.1
+```
 
-Applicant income
+## Setup Steps
 
-Credit score
+1. Downloaded the Anaconda Distribution installer for macOS (Apple Silicon).
+2. Installed Anaconda on the system.
+3. Verified that Conda was accessible from the terminal.
+4. Activated the base Conda environment.
+5. Launched the Python interpreter.
+6. Verified that commonly used data science packages (`numpy`, `pandas`, and `matplotlib`) were installed and could be imported successfully.
 
-Employment status
+## Verification Commands
 
-Loan amount
+### Check Conda Version
 
-Loan term
+```bash
+conda --version
+```
 
-Debt-to-income ratio
+**Output**
 
-Existing loans
+```text
+conda 25.11.1
+```
 
-Previous repayment history
+---
 
-Age
+### Check Available Environments
 
-Before analyzing the data, it is important to understand what each variable represents, identify missing values, check for inconsistencies, and ensure the data is reliable. Since data serves as evidence, poor-quality data can lead to incorrect conclusions.
+```bash
+conda env list
+```
 
-**Insight**
+**Output**
 
-Insights are meaningful conclusions that help people make decisions.
+```text
+# conda environments:
+#
+base                  *   /opt/anaconda3
+```
 
-For example, analysis might reveal that applicants with high debt-to-income ratios, unstable employment, and poor repayment histories are more likely to default.
+---
 
-These insights could help banks:
+### Launch Python
 
-Improve loan approval decisions
-Adjust interest rates based on risk
-Reduce financial losses
-Offer financial guidance to high-risk customers
+```bash
+python
+```
 
-The goal is not simply to generate numbers or charts, but to provide information that supports better decision-making.
+**Output**
 
-Applying the Lifecycle
-Project Context
+```text
+Python 3.13.9
+```
 
-Banks lose money when borrowers fail to repay their loans. Predicting loan default risk allows financial institutions to identify high-risk applicants before approving a loan.
+---
 
-**Question**
+### Verify Installed Packages
 
-Which loan applicants have the highest probability of defaulting?
+```python
+import numpy
+import pandas
+import matplotlib
 
-**Data**
+print("Everything works!")
+```
 
-The project would require historical loan application data collected by the bank. This data would include customer demographics, financial information, credit history, employment details, loan characteristics, and repayment records.
+**Output**
 
-**Insight**
-The analysis could identify the factors that most strongly influence loan defaults. These findings would help banks make more informed lending decisions, manage financial risk, and design policies that balance profitability with responsible lending.
+```text
+Everything works!
+```
+
+## Proof
+
+The following screenshots demonstrate:
+
+- Successful Conda installation
+- Active base environment
+- Python interpreter launch
+- Successful imports of NumPy, Pandas, and Matplotlib
