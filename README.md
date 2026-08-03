@@ -95,3 +95,25 @@ The following screenshots demonstrate:
 - Active base environment
 - Python interpreter launch
 - Successful imports of NumPy, Pandas, and Matplotlib
+
+# Data Organization
+
+## Raw Data
+
+Raw data is the original dataset collected from the source. It is stored in the `data/raw/` folder and is never edited directly. This ensures the original data remains unchanged and can always be referenced.
+
+## Processed Data
+
+Processed data is created by cleaning or transforming the raw data. It is stored separately in the `data/processed/` folder. This allows processed datasets to be recreated whenever necessary.
+
+## Outputs
+
+Outputs such as plots, reports, tables, and trained models are stored in the `outputs/` folder. Keeping outputs separate from data improves organization and prevents accidental modification of datasets.
+
+## Data Flow
+
+The project follows a one-directional workflow:
+
+Raw Data → Processed Data → Outputs
+
+Raw data is read by scripts, processed data is generated, and final outputs are produced without modifying the original data.

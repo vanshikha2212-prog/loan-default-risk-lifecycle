@@ -1,0 +1,10 @@
+.ipynb_checkpoints/
+.virtual_documents/
+__pycache__/
+.DS_Store
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+env/
