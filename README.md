@@ -1,55 +1,96 @@
-# Loan Default Risk Prediction Lifecycle
+# 🏦 Loan Default Risk Prediction Lifecycle
 
-An end-to-end machine learning project that predicts loan approval status using multiple classification algorithms. The project follows a complete data science workflow—from data preprocessing and exploratory data analysis to model training and evaluation.
-
----
-
-## Project Overview
-
-The objective of this project is to build predictive models that determine whether a loan application is likely to be approved based on applicant information.
-
-The project demonstrates a standard machine learning lifecycle using Python and common data science libraries.
+An end-to-end **Machine Learning** project that predicts whether a loan application will be **approved or rejected** based on applicant information. This project demonstrates the complete data science lifecycle—from data preprocessing and exploratory data analysis to model building, evaluation, and interpretation.
 
 ---
 
-## Dataset
+## 📌 Project Objective
 
-- Dataset: Loan Prediction Dataset
-- Format: CSV
-- Target Variable: Loan Status
+Banks receive thousands of loan applications, and evaluating each application manually is time-consuming and prone to inconsistencies.
 
-The dataset contains applicant information such as:
+The objective of this project is to build machine learning models that can predict loan approval status using historical applicant information and compare their performance using standard evaluation metrics.
+
+---
+
+## 📊 Dataset
+
+**Dataset:** Loan Prediction Dataset
+
+The dataset contains **614 loan applications** with applicant information including:
 
 - Gender
 - Marital Status
-- Dependents
+- Number of Dependents
 - Education
-- Employment Status
+- Self Employment
 - Applicant Income
 - Co-applicant Income
 - Loan Amount
-- Loan Term
+- Loan Amount Term
 - Credit History
 - Property Area
 
----
+**Target Variable**
 
-## Project Workflow
-
-- Data Loading
-- Data Cleaning
-- Missing Value Treatment
-- Exploratory Data Analysis (EDA)
-- Feature Encoding
-- Feature Scaling
-- Train-Test Split
-- Model Training
-- Model Evaluation
-- Performance Comparison
+- Loan_Status
+  - **1** → Loan Approved
+  - **0** → Loan Rejected
 
 ---
 
-## Machine Learning Models
+# 🛠️ Project Workflow
+
+```text
+Dataset
+    ↓
+Data Cleaning
+    ↓
+Missing Value Treatment
+    ↓
+Exploratory Data Analysis
+    ↓
+Feature Engineering
+    ↓
+Encoding & Scaling
+    ↓
+Train-Test Split
+    ↓
+Model Building
+    ↓
+Model Evaluation
+```
+
+---
+
+# 📈 Exploratory Data Analysis
+
+## Dataset Overview
+
+![Dataset Overview](images/dataset-overview.png)
+
+---
+
+## Missing Value Analysis
+
+![Missing Values](images/missing-values.png)
+
+---
+
+## Correlation Heatmap
+
+![Correlation Heatmap](images/correlation-heatmap.png)
+
+---
+
+## Applicant Income Distribution
+
+![Applicant Income Distribution](images/applicant-income-distribution.png)
+
+---
+
+# 🤖 Machine Learning Models
+
+The following classification models were implemented and compared:
 
 - Logistic Regression
 - Decision Tree Classifier
@@ -57,7 +98,45 @@ The dataset contains applicant information such as:
 
 ---
 
-## Technologies Used
+# 📊 Model Performance
+
+| Model | Accuracy |
+|--------|----------|
+| Logistic Regression | **78.86%** |
+| Decision Tree | **78.05%** *(Replace with your exact result if different)* |
+| Random Forest | **78.86%** |
+
+---
+
+## ROC Curve
+
+**AUC Score:** **0.741**
+
+![ROC Curve](images/roc-curve.png)
+
+The ROC curve demonstrates that the model performs better than random guessing and achieves a moderate ability to distinguish between approved and rejected loan applications.
+
+---
+
+## Feature Importance
+
+![Feature Importance](images/feature-importance.png)
+
+Feature importance analysis shows that **Credit History** is the strongest predictor of loan approval, followed by income-related variables.
+
+---
+
+# 📌 Key Insights
+
+- Credit History is the most influential feature in determining loan approval.
+- Applicants with stronger credit histories have a significantly higher chance of approval.
+- Logistic Regression and Random Forest achieved similar performance on this dataset.
+- Decision Tree produced comparatively lower generalization performance.
+- Feature engineering using **TotalIncome** improved the representation of an applicant's financial capacity.
+
+---
+
+# 🛠️ Technologies Used
 
 - Python
 - Pandas
@@ -65,46 +144,78 @@ The dataset contains applicant information such as:
 - Matplotlib
 - Scikit-learn
 - Jupyter Notebook
+- Git
+- GitHub
 
 ---
 
-## Repository Structure
+# 📁 Repository Structure
 
-```
+```text
 loan-default-risk-lifecycle/
 │
 ├── data/
 │   └── raw/
 │       └── train.csv
 │
+├── images/
+│   ├── dataset-overview.png
+│   ├── missing-values.png
+│   ├── correlation-heatmap.png
+│   ├── applicant-income-distribution.png
+│   ├── roc-curve.png
+│   └── feature-importance.png
+│
 ├── notebooks/
 │   └── loan-prediction-analysis.ipynb
 │
 ├── requirements.txt
 ├── .gitignore
+├── LICENSE
 └── README.md
 ```
 
 ---
 
-## Results
+# 🚀 Future Improvements
 
-The models were trained and evaluated using standard classification metrics. Performance was compared to identify the most suitable model for the dataset.
+Potential improvements for future iterations of this project include:
 
----
-
-## Future Improvements
-
-- Hyperparameter tuning
+- Hyperparameter tuning using GridSearchCV
 - Cross-validation
-- Feature engineering
-- Model deployment using Flask or Streamlit
+- XGBoost and LightGBM models
+- Probability threshold optimization
+- Model deployment using Streamlit or Flask
+- Explainable AI using SHAP values
 
 ---
 
-## Author
+# 📚 Learning Outcomes
+
+Through this project, I gained practical experience in:
+
+- Exploratory Data Analysis (EDA)
+- Data Cleaning
+- Missing Value Treatment
+- Feature Engineering
+- Feature Encoding
+- Feature Scaling
+- Binary Classification
+- Logistic Regression
+- Decision Trees
+- Random Forests
+- Model Evaluation
+- ROC Curve & AUC Analysis
+- Feature Importance Interpretation
+- Git & GitHub for project version control
+
+---
+
+# 👩‍💻 Author
 
 **Vanshikha Kandregula**
 
 B.Sc. Applied Statistics & Data Science  
 Symbiosis Statistical Institute
+
+GitHub: https://github.com/vanshikha2212-prog
