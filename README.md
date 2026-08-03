@@ -73,7 +73,7 @@ Model Evaluation
 
 ## Missing Value Analysis
 
-![Missing Values](info.png)
+![Missing Values](images/info.png)
 
 ---
 
