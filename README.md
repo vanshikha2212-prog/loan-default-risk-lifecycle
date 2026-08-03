@@ -66,13 +66,14 @@ Model Evaluation
 
 ## Dataset Overview
 
-![Dataset Overview](images/dataset-overview.png)
+![Dataset Overview](images/dataset-overview1!.png)
+![Dataset Overview](images/dataset-overview2!.png)
 
 ---
 
 ## Missing Value Analysis
 
-![Missing Values](images/missing-values.png)
+![Missing Values](info.png)
 
 ---
 
@@ -84,7 +85,7 @@ Model Evaluation
 
 ## Applicant Income Distribution
 
-![Applicant Income Distribution](images/applicant-income-distribution.png)
+![Applicant Income Distribution](images/applicant-income-distn.png)
 
 ---
 
@@ -120,7 +121,6 @@ The ROC curve demonstrates that the model performs better than random guessing a
 
 ## Feature Importance
 
-![Feature Importance](images/feature-importance.png)
 
 Feature importance analysis shows that **Credit History** is the strongest predictor of loan approval, followed by income-related variables.
 
