@@ -4,6 +4,12 @@ An end-to-end **Machine Learning** project that predicts whether a loan applicat
 
 ---
 
+![Python](https://img.shields.io/badge/Python-3.13-blue)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+---
+
 ## 📌 Project Objective
 
 Banks receive thousands of loan applications, and evaluating each application manually is time-consuming and prone to inconsistencies.
@@ -32,7 +38,7 @@ The dataset contains **614 loan applications** with applicant information includ
 
 **Target Variable**
 
-- Loan_Status
+- **Loan_Status**
   - **1** → Loan Approved
   - **0** → Loan Rejected
 
@@ -67,6 +73,7 @@ Model Evaluation
 ## Dataset Overview
 
 ![Dataset Overview](images/data-overview1.png)
+
 ![Dataset Overview](images/data-overview2.png)
 
 ---
@@ -89,6 +96,16 @@ Model Evaluation
 
 ---
 
+## ROC Curve
+
+**AUC Score:** **0.741**
+
+![ROC Curve](images/roc-curve.png)
+
+The ROC curve demonstrates that the model performs better than random guessing and achieves a moderate ability to distinguish between approved and rejected loan applications.
+
+---
+
 # 🤖 Machine Learning Models
 
 The following classification models were implemented and compared:
@@ -104,25 +121,14 @@ The following classification models were implemented and compared:
 | Model | Accuracy |
 |--------|----------|
 | Logistic Regression | **78.86%** |
-| Decision Tree | **78.05%** *(Replace with your exact result if different)* |
+| Decision Tree | **78.05%** |
 | Random Forest | **78.86%** |
 
 ---
 
-## ROC Curve
+## ⭐ Feature Importance
 
-**AUC Score:** **0.741**
-
-![ROC Curve](images/roc-curve.png)
-
-The ROC curve demonstrates that the model performs better than random guessing and achieves a moderate ability to distinguish between approved and rejected loan applications.
-
----
-
-## Feature Importance
-
-
-Feature importance analysis shows that **Credit History** is the strongest predictor of loan approval, followed by income-related variables.
+Feature importance analysis indicates that **Credit History** is the strongest predictor of loan approval, followed by applicant income and loan-related attributes.
 
 ---
 
@@ -130,9 +136,9 @@ Feature importance analysis shows that **Credit History** is the strongest predi
 
 - Credit History is the most influential feature in determining loan approval.
 - Applicants with stronger credit histories have a significantly higher chance of approval.
-- Logistic Regression and Random Forest achieved similar performance on this dataset.
-- Decision Tree produced comparatively lower generalization performance.
-- Feature engineering using **TotalIncome** improved the representation of an applicant's financial capacity.
+- Logistic Regression and Random Forest achieved similar predictive performance.
+- Decision Tree showed comparatively lower generalization performance.
+- Feature engineering using **TotalIncome** improved representation of an applicant's financial capacity.
 
 ---
 
@@ -159,12 +165,13 @@ loan-default-risk-lifecycle/
 │       └── train.csv
 │
 ├── images/
-│   ├── dataset-overview.png
-│   ├── missing-values.png
+│   ├── applicant-income-distn.png
 │   ├── correlation-heatmap.png
-│   ├── applicant-income-distribution.png
-│   ├── roc-curve.png
-│   └── feature-importance.png
+│   ├── data-overview1.png
+│   ├── data-overview2.png
+│   ├── info.png
+│   ├── loan-status-vs-credit-history.png
+│   └── roc-curve.png
 │
 ├── notebooks/
 │   └── loan-prediction-analysis.ipynb
@@ -173,6 +180,34 @@ loan-default-risk-lifecycle/
 ├── .gitignore
 ├── LICENSE
 └── README.md
+```
+
+---
+
+# 🚀 Installation
+
+```bash
+git clone https://github.com/vanshikha2212-prog/loan-default-risk-lifecycle.git
+
+cd loan-default-risk-lifecycle
+
+pip install -r requirements.txt
+```
+
+---
+
+# ▶️ Running the Project
+
+Launch Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+Then open:
+
+```text
+notebooks/loan-prediction-analysis.ipynb
 ```
 
 ---
@@ -218,4 +253,4 @@ Through this project, I gained practical experience in:
 B.Sc. Applied Statistics & Data Science  
 Symbiosis Statistical Institute
 
-GitHub: https://github.com/vanshikha2212-prog
+GitHub: **https://github.com/vanshikha2212-prog**
