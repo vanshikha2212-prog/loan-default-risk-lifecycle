@@ -1,29 +1,30 @@
-# 🏦 Loan Default Risk Prediction
+# Loan Default Risk Prediction Lifecycle
 
-An end-to-end Machine Learning project that predicts whether a loan application is likely to be approved or rejected based on applicant information. This project follows the complete data science lifecycle—from data preprocessing and exploratory data analysis to model building, evaluation, and interpretation.
-
----
-
-## 📌 Project Objective
-
-Financial institutions receive thousands of loan applications every day. Incorrect lending decisions can either:
-
-- Increase financial losses by approving risky applicants.
-- Reduce business opportunities by rejecting eligible applicants.
-
-The objective of this project is to build and compare multiple machine learning models that can predict loan approval status using applicant information.
+An end-to-end machine learning project that predicts loan approval status using multiple classification algorithms. The project follows a complete data science workflow—from data preprocessing and exploratory data analysis to model training and evaluation.
 
 ---
 
-## 📊 Dataset
+## Project Overview
 
-The dataset contains information about loan applicants, including:
+The objective of this project is to build predictive models that determine whether a loan application is likely to be approved based on applicant information.
+
+The project demonstrates a standard machine learning lifecycle using Python and common data science libraries.
+
+---
+
+## Dataset
+
+- Dataset: Loan Prediction Dataset
+- Format: CSV
+- Target Variable: Loan Status
+
+The dataset contains applicant information such as:
 
 - Gender
 - Marital Status
+- Dependents
 - Education
-- Self Employment
-- Number of Dependents
+- Employment Status
 - Applicant Income
 - Co-applicant Income
 - Loan Amount
@@ -31,96 +32,43 @@ The dataset contains information about loan applicants, including:
 - Credit History
 - Property Area
 
-**Target Variable**
-
-- Loan_Status
-    - 1 → Approved
-    - 0 → Rejected
-
 ---
 
-# 🛠 Project Workflow
+## Project Workflow
 
-### 1. Data Cleaning
-
-- Removed unnecessary columns
-- Handled missing values
-- Encoded categorical variables
-- Created Total Income feature
-
----
-
-### 2. Exploratory Data Analysis
-
-Performed:
-
-- Distribution Analysis
-- Correlation Analysis
-- Feature Importance Analysis
-- Class Distribution Analysis
-
----
-
-### 3. Data Preprocessing
-
-- Train-Test Split
-- Feature Scaling (Logistic Regression)
+- Data Loading
+- Data Cleaning
+- Missing Value Treatment
+- Exploratory Data Analysis (EDA)
 - Feature Encoding
+- Feature Scaling
+- Train-Test Split
+- Model Training
+- Model Evaluation
+- Performance Comparison
 
 ---
 
-### 4. Models Implemented
+## Machine Learning Models
 
-### Logistic Regression
-
-A simple and interpretable linear classification model used as the baseline.
-
-### Decision Tree
-
-A rule-based model capable of learning non-linear decision boundaries.
-
-### Random Forest
-
-An ensemble learning method combining multiple decision trees to improve robustness and reduce overfitting.
+- Logistic Regression
+- Decision Tree Classifier
+- Random Forest Classifier
 
 ---
 
-# 📈 Model Performance
+## Technologies Used
 
-| Model | Accuracy |
-|--------|----------|
-| Logistic Regression | **78.86%** |
-| Decision Tree | 70.73% |
-| Random Forest | **78.86%** |
-
----
-
-# 📉 Evaluation Metrics
-
-The models were evaluated using:
-
-- Accuracy
-- Confusion Matrix
-- Precision
-- Recall
-- F1 Score
-- ROC Curve
-- AUC Score
-
-**Best ROC-AUC Score:** **0.74**
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Scikit-learn
+- Jupyter Notebook
 
 ---
 
-# 🔍 Key Insights
-
-- Credit History was the most important predictor of loan approval.
-- Total Income and Applicant Income also contributed significantly.
-- Logistic Regression performed as well as Random Forest on this dataset while remaining more interpretable.
-- Decision Tree achieved lower performance due to overfitting and poorer generalization.
-
----
-
-# 📂 Project Structure
+## Repository Structure
 
 ```
 loan-default-risk-lifecycle/
@@ -132,64 +80,31 @@ loan-default-risk-lifecycle/
 ├── notebooks/
 │   └── loan-prediction-analysis.ipynb
 │
-├── scripts/
-│   └── simple_analysis.py
-│
+├── requirements.txt
 ├── .gitignore
 └── README.md
 ```
 
 ---
 
-# 💻 Technologies Used
+## Results
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Scikit-learn
-- Jupyter Notebook
+The models were trained and evaluated using standard classification metrics. Performance was compared to identify the most suitable model for the dataset.
 
 ---
 
-# 🚀 Future Improvements
+## Future Improvements
 
-Some potential improvements include:
-
-- Hyperparameter tuning using GridSearchCV
-- XGBoost and LightGBM models
-- Cross Validation
-- Feature Engineering
-- Probability Threshold Optimization
-- Model Deployment using Flask or FastAPI
-- Interactive dashboard using Streamlit
-
----
-
-# 📚 What I Learned
-
-Through this project, I gained practical experience with:
-
-- Data preprocessing
+- Hyperparameter tuning
+- Cross-validation
 - Feature engineering
-- Exploratory data analysis
-- Logistic Regression
-- Decision Trees
-- Random Forests
-- Model evaluation
-- ROC-AUC analysis
-- Feature importance interpretation
-- End-to-end machine learning workflow
+- Model deployment using Flask or Streamlit
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Vanshikha Kandregula**
 
 B.Sc. Applied Statistics & Data Science  
 Symbiosis Statistical Institute
-
-GitHub: https://github.com/vanshikha2212-prog
-
----
