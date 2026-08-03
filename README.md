@@ -66,8 +66,8 @@ Model Evaluation
 
 ## Dataset Overview
 
-![Dataset Overview](images/dataset-overview1!.png)
-![Dataset Overview](images/dataset-overview2!.png)
+![Dataset Overview](images/data-overview1!.png)
+![Dataset Overview](images/data-overview2!.png)
 
 ---
 
