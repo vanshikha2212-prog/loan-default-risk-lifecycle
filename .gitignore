@@ -8,3 +8,16 @@ __pycache__/
 venv/
 .venv/
 env/
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+.virtual_documents/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+*.ipynb.layout
